@@ -1,0 +1,7 @@
+# ubuntu create postgres database
+
+sudo su - postgres
+psql
+create database fast_db_2;
+create user tester with encrypted password 'tester';
+grant all privileges on database fast_db_2 to tester;
